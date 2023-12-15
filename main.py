@@ -8,7 +8,7 @@ def strength_checker(username, password):
     if re.search(username.lower(), password.lower()):
         return False
     #Parolanın içerisinde boşluk olmamalı
-    if re.search("\s", password):
+    if re.search("/s", password):
         return False
     #Parolanın içerisinde en az bir tane büyük harf olmalı
     if not re.search(r'[A-Z]', password):
@@ -17,10 +17,10 @@ def strength_checker(username, password):
     if not re.search(r'[a-z]', password):
         return False
     #Parolanın içerisinde en az bir tane büyük harf olmalı
-    if not re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
+    if not re.search(r'[!@$*,.]', password):
         return False
     #Ben parolamda veya kullanıcı adımda bu karakterlerin olmasını istemiyorum
-    if re.search(r'[#%^&()?{}|]', password) or re.search(r'[#%^&()?{}|]', username):
+    if re.search(r'[#%^&()?{}|<>:"]', password) or re.search(r'[#%^&()?{}|<>:"]', username):
         return False
     
     #Bütün şartları karşılarsan şifre doğrudur. Tabii ki
