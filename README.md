@@ -74,5 +74,12 @@ If you want to learn about "platform" library, you can look that  [Documentation
 
 - But these characters **"#%^&()?{}|"** should not be in the password.
 
+## Update
+
+- **v2.1**, Fix and adding a new rule about numbers.
+- **v2**, Adding a some colors
+- **UPDATE README**, Fixing ReadMe
+- **v1.1**, Fixing
+- **v1**, First.
 
 
