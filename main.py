@@ -48,6 +48,9 @@ def strength_checker(username, password):
     #Parolanın içerisinde en az bir tane küçük harf olmalı
     if not re.search(r'[a-z]', password):
         return False
+    #Parolanın içerisinde en az bir tane sayı olmalı
+    if not re.search(r'[1-9]', password):
+        return False
     #Parolanın içerisinde en az bir tane büyük harf olmalı
     if not re.search(r'[!@$*,.]', password):
         return False
